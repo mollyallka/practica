@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Коралина в Стране Кошмаров</title>
+    <link rel="stylesheet" href="/практика/css/style.css">
+</head>
+<body>
+    <div class="slide" id="slide1">
+        <h1 class="zx">Коралина в стране кошмаров</h1>
+        <p class="qw" style="color: #B0C4DE;">Для того, чтобы перейти на сайт, заполните поля<br> с вводом  своих данных</p>
+        <form id="form1" name="formOne" novalidate>
+            <div class="blin">
+                <label for="name">Логин (только русские символы и цифры, от 4 до 10 символов):</label><br>
+                <input type="text" id="name" class="inp" name="fio" placeholder ="Введите имя" pattern="^[А-Яа-я0-9]{3,9}$" required><br>
+                <span id="nameError" class="error"></span><br>
+
+                <label for="birthdate">Дата рождения:</label><br>
+                <input type="date" id="birthdate" class="inp" min="1950-01-01" max="2024-10-04" required><br>
+                <span id="dateError" class="error"></span><br>
+
+                <label>Пол:</label>
+                <input type="radio" id="male" name="gender" value="Мужской" checked="checked">
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="Женский">
+                <label for="female">Женский</label> <br>
+                <span id="genderError" class="error"></span> <br>
+
+                <button type="button" class="button" id="next1">Перейти на сайт</button>
+            </div>
+        </form>
+    </div> 
+<script src="/практика/script/script.js"></script> 
+</body>
+</html>
