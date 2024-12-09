@@ -6,7 +6,7 @@ const dateError = document.getElementById("dateError");
 const next1 = document.getElementById("next1");
 const exitButton = document.getElementById("exit");
 
-// Проверка имени
+// проверка имени
 function validateName() {
     if (!nameInput.checkValidity()) {
         nameError.textContent = "Логин должен содержать только русские буквы и цифры, от 4 до 10 символов.";
@@ -18,7 +18,7 @@ function validateName() {
     }
 }
 
-// Проверка даты рождения
+// проверка даты рождения
 function validateBirthdate() {
     if (!birthdateInput.value) {
         dateError.textContent = "Вы не ввели дату рождения.";
@@ -34,7 +34,7 @@ function validateBirthdate() {
     }
 }
 
-// Обработчик кнопки перехода на сайт
+// обработчик кнопки перехода на сайт
 if (next1) {
     next1.addEventListener("click", () => {
         const isNameValid = validateName();
@@ -42,32 +42,27 @@ if (next1) {
 
         if (isNameValid && isBirthdateValid) {
             const userLogin = nameInput.value;
-
-            // Сохранение имени пользователя в локальном хранилище
+            // сохранение имени пользователя в локальном хранилище
             localStorage.setItem("userLogin", userLogin);
-
-            // Переход на страницу описания
+            // переход на страницу описания
             window.location.href = "/практика/html/ind.html";
         }
     });
 }
 
-// Обработчик кнопки выйти
+// обработчик кнопки выйти
 if (exitButton) {
     exitButton.addEventListener("click", (event) => {
-        event.preventDefault(); // Предотвращаем стандартное поведение кнопки
-        // Сбрасываем форму
+        event.preventDefault();
         if (form1) form1.reset();
-
-        // Удаляем данные из локального хранилища
+        // удаление данных из локального хранилища
         localStorage.removeItem("userLogin");
-
-        // Возвращаемся на главную страницу
+        // возврат на главную страницу
         window.location.href = "/практика/index.html";
     });
 }
 
-// Отображение сообщения добро пожаловать + имя, которое ввел пользователь
+// отображение сообщения добро пожаловать + имя, которое ввел пользователь
 const userLogin = localStorage.getItem("userLogin");
 const welcomeMessage = document.getElementById("welcomeMessage");
 

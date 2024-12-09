@@ -4,7 +4,7 @@ const searchInput = document.getElementById('searchInput');
 const exitButton = document.getElementById("exit");
 const form1 = document.getElementById("form1");
 
-// Обработчик для показа описания по клику на элемент
+// обработчик описания по клику на элемент
 termsList.addEventListener('click', (event) => {
     const target = event.target;
     if (target.tagName === 'LI') {
@@ -13,12 +13,12 @@ termsList.addEventListener('click', (event) => {
     }
 });
 
-// Фильтрация списка терминов и очистка описания
+// фильтрация списка терминов
 searchInput.addEventListener('input', () => {
     const filter = searchInput.value.toLowerCase();
     const items = termsList.querySelectorAll('li');
 
-    // Очистка описания при поиске
+    // очистка описания при поиске
     descriptionDiv.textContent = "";
 
     items.forEach(item => {
@@ -29,22 +29,19 @@ searchInput.addEventListener('input', () => {
 
 
 
-// Обработчик кнопки выйти
+// обработчик кнопки выйти
 if (exitButton) {
     exitButton.addEventListener("click", (event) => {
-        event.preventDefault(); // Предотвращаем стандартное поведение кнопки
-        // Сбрасываем форму
+        event.preventDefault();
         if (form1) form1.reset();
-
-        // Удаляем данные из локального хранилища
+        // удаление данных из локального хранилища
         localStorage.removeItem("userLogin");
-
-        // Возвращаемся на главную страницу
+        // возврат на главную страницу
         window.location.href = "/практика/index.html";
     });
 }
 
-// Отображение сообщения добро пожаловать + имя, которое ввел пользователь
+// отображение сообщения добро пожаловать + имя, которое ввел пользователь
 const userLogin = localStorage.getItem("userLogin");
 const welcomeMessage = document.getElementById("welcomeMessage");
 
