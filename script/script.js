@@ -45,7 +45,7 @@ if (next1) {
             // сохранение имени пользователя в локальном хранилище
             localStorage.setItem("userLogin", userLogin);
             // переход на страницу описания
-            window.location.href = "/html/ind.html";
+            window.location.href = "./html/ind.html";
         }
     });
 }
@@ -58,7 +58,7 @@ if (exitButton) {
         // удаление данных из локального хранилища
         localStorage.removeItem("userLogin");
         // возврат в начало
-        window.location.href = "/index.html";
+        window.location.href = "index.html";
     });
 }
 
