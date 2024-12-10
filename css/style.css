@@ -29,6 +29,7 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    position: relative;
 }
 p, label{
     text-decoration:none;
@@ -102,4 +103,23 @@ input [type="radio"] .var_otveta {
     font-size: 20px;
     display: none;
     margin: 5px 0;
+}
+.container-photo-slide-one,
+.container-photo-slide-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container-photo-slide-one {
+    right: 0;
+    margin-right: 60px;
+}
+
+.container-photo-slide-two {
+    left: 0;
+    margin-left: 100px;
 }
