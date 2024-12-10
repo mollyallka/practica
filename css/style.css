@@ -21,20 +21,20 @@ body{
 .slide.active{
     display: block;
 }
-h1, .qw{
+h1, .paragraph-p{
     color: white;
     text-align: center;
 }
-.zx{
+.paragraph-h1{
     margin-top: 230px;
 }
-.blin{
+.user-authorization{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.inp{
+.input-text-authorization{
     width: 250px;
     height: 30px;
     font-size: 25px;
@@ -44,14 +44,14 @@ h1, .qw{
     border: 0 solid ;
     color: #B0C4DE;
 }
-.inp:valid{
+.input-text-authorization:valid{
     background-color: #5661b3;
 }
 
-.inp:invalid {
+.input-text-authorization:invalid {
     background-color:rgba(158, 13, 13, 0.486);
 }
-.inp::placeholder{
+.input-text-authorization::placeholder{
     color: #B0C4DE;
 }
 
@@ -74,7 +74,7 @@ input [type="radio"] .var_otveta {
     margin-bottom: 10px;
 }
 
-.logo{
+.image-logo{
     margin-top: 5px;
     
 }
@@ -170,15 +170,15 @@ a.active{
     padding-left: 40px;
 
 }
-.text_opisanie_p{
+.text-opisanie-p{
     color: #B0C4DE;
 }
-.photo_opisanie{
+.photo-opisanie{
     float: right;
     margin-right: 40px;
 }
 
-.photo_opisanie2{
+.photo-opisanie-p-two{
     float: left;
     margin-left: 40px;
     margin-right: 20px;
@@ -215,7 +215,7 @@ a.active{
 .social-icons a:hover img {
     transform: scale(1.2);
 }
-.asd{
+.paragraph-p-tel-copi{
     text-align: center;
     
 }

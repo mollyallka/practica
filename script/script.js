@@ -58,7 +58,7 @@ if (exitButton) {
         // удаление данных из локального хранилища
         localStorage.removeItem("userLogin");
         // возврат в начало
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
     });
 }
 

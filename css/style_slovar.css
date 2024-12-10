@@ -26,7 +26,7 @@ h1{
     text-align: center;
 }
 
-.inp{
+.input-text-search{
     width: 330px;
     height: 30px;
     font-size: 25px;
@@ -36,14 +36,14 @@ h1{
     border: 0 solid ;
     color: #B0C4DE;
 }
-.inp:valid{
+.input-text-search:valid{
     background-color: #5661b3;
 }
 
-.inp:invalid {
+.input-text-search:invalid {
     background-color:rgba(158, 13, 13, 0.486);
 }
-.inp::placeholder{
+.input-text-search::placeholder{
     color: #B0C4DE;
 }
 
@@ -60,10 +60,10 @@ input [type="radio"] .var_otveta {
     margin-bottom: 10px;
 }
 
-.logo{
+.image-logo{
     margin-top: 5px;
 }
-.blin{
+.user-information-pers{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +83,7 @@ a, p, label, li{
     list-style: none;
     margin-top: 10px;
 }
-.li{
+.information-item{
     padding-bottom: 7px;
     text-align: center;
     margin: 5px 0;
@@ -217,6 +217,6 @@ a.active{
 .social-icons a:hover img {
     transform: scale(1.2);
 }
-.asd{
+.paragraph-p-tel-copi{
     text-align: center; 
 }
