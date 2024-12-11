@@ -47,6 +47,14 @@ h1, .paragraph-p{
     margin-bottom: 20px;
 }
 
+.container-user-authorization{
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
 .user-authorization{
     display: flex;
     justify-content: center;
