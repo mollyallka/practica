@@ -123,3 +123,8 @@ input [type="radio"] .var_otveta {
     left: 0;
     margin-left: 100px;
 }
+@media(max-width:600px){
+    #photo{
+        display: none;
+    }
+}
