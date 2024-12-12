@@ -4,12 +4,28 @@ const searchInput = document.getElementById('searchInput');
 const exitButton = document.getElementById("exit");
 const form1 = document.getElementById("form1");
 
+// функция для отображения описания и изображения
+function showDescriptionAndImage(target) {
+    const description = target.getAttribute('data-description');
+    const imageUrl = target.getAttribute('data-image');
+    descriptionDiv.innerHTML = '';
+
+    const descriptionText = document.createElement('p');
+    descriptionText.textContent = description || "Описание отсутствует";
+    descriptionDiv.appendChild(descriptionText);
+
+    // добавляем изображение
+    if (imageUrl) {
+        const image = document.createElement('img');
+        image.src = imageUrl;
+        descriptionDiv.appendChild(image);
+    }
+}
 // обработчик описания по клику на элемент
 termsList.addEventListener('click', (event) => {
     const target = event.target;
     if (target.tagName === 'LI') {
-        const description = target.getAttribute('data-description');
-        descriptionDiv.textContent = description || "Описание отсутствует";
+        showDescriptionAndImage(target);
     }
 });
 
@@ -26,8 +42,6 @@ searchInput.addEventListener('input', () => {
         item.style.display = term.includes(filter) ? '' : 'none';
     });
 });
-
-
 
 // обработчик кнопки выйти
 if (exitButton) {

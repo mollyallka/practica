@@ -122,14 +122,29 @@ a, p, label, li{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 600px;
+    text-align: center;
+    margin-top: 20px;
 }
-.description{
-    margin-top: -20px;
+#description p {
     margin-left: 40px;
     color: #B0C4DE;
     text-align: center;
     font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 10px;
+}
+#description img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 40px;
 }
 
 a:hover{
