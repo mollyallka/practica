@@ -1,5 +1,36 @@
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide-image');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const slideInfo = document.getElementById('number-slide');
 const exitButton = document.getElementById("exit");
 const form1 = document.getElementById("form1");
+
+let currentSlide = 0;
+const totalSlides = slides.length;
+
+function updateSliderPosition() {
+    slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    slideInfo.textContent = `${currentSlide + 1} слайд из ${totalSlides}`;
+}
+
+// обработчик для кнопки "вперед"
+nextBtn.addEventListener('click', () => {
+    if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSliderPosition();
+    }
+});
+
+// обработчик для кнопки "назад"
+prevBtn.addEventListener('click', () => {
+    if (currentSlide > 0) {
+        currentSlide--;
+        updateSliderPosition();
+    }
+});
+
+updateSliderPosition();
 
 // обработчик кнопки выйти
 if (exitButton) {
