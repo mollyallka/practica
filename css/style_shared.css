@@ -3,6 +3,8 @@ body, html, ul{
     padding:0;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    scrollbar-color: #0b233e #B0C4DE;
 }
 
 body{
@@ -62,11 +64,10 @@ input [type="radio"] .var_otveta {
 }
 
 .error {
-    color: rgba(158, 13, 13, 0.486);
-    font-size: 25px;
+    color: rgba(158, 13, 13, 0.6);
+    font-size: 20px;
     display: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 5px 0;
 }
 
 .image-logo{
@@ -326,6 +327,83 @@ a.active{
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.container-test {
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+.test{
+    text-align: center;
+}
+.questions{
+    padding: 5px;
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+}
+.input-text-authorization{
+    width: 250px;
+    height: 30px;
+    font-size: 25px;
+    transition: 1s; 
+    margin-top: 15px;
+    padding: 8px;
+    border: 1px solid #8e24aa;
+    border-radius: 5px;
+    color: #B0C4DE;
+    box-sizing: border-box;
+}
+.input-text-authorization:valid{
+    background-color: #3946a8;
+}
+
+.input-text-authorization:invalid {
+    background-color:rgba(158, 13, 13, 0.486);
+}
+.input-text-authorization::placeholder{
+    color: #B0C4DE;
+}
+.var_otveta {
+    margin-top: 15px;
+}
+
+.error-test{
+    display: block;
+    font-size: 20px;
+}
+.error-test.correct {
+    color: #006400;
+    margin-bottom: 15px;
+}
+
+.error-test.incorrect {
+    color: rgba(158, 13, 13, 0.486); 
+    margin-bottom: 20px;
+}
+.resultAnswers{
+    text-align: center;
+    color: white;
+    font-size: 21px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    display: block;
+}
+.results-container{
+    display: none;
+}
 @media (max-width: 600px) {
 .photo-opisanie, .photo-opisanie-p-two {
     float: none;

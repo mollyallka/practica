@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="slide" id="slide2">
-        <form id="form2" name="formTwo">
         <header id="header">
             <img src="../photo/logo.png" class="image-logo" alt="Изображение">
             <nav id="nav">
@@ -18,15 +17,72 @@
                     <li><a href="index_gallery.html">Галерея</a></li>
                     <li><a href="index_test.html" class="active">Тест</a></li>
                     <li><a href="index_account.html">Личный кабинет</a></li>
-                </ul>   
+                </ul>
             </nav>
             <span id="welcomeMessage" class="menu-login"></span>
             <button id="exit">Выйти</button>
         </header>
             <div>
                 <h1>Тест по мультфильму</h1>
-                
-        <footer id="footer" class="footer-slovar">
+                <div>
+                    <div class="container-test">
+                        <div class="test">
+                            <form id="form1" name="formTwo" novalidate>
+                                <label for="question1" class="questions">1. Как звали другую маму (колдунью) Коралины?</label><br>
+                                <input type="text" class="input-text-authorization" name="quest1" id="question1" pattern="Бельдам" required><br><br>
+                                <span id="q1Error" class="error-test"></span><br>
+                    
+                                <label for="question2" class="questions">2. Какая фамилия была у главной героини?</label><br>
+                                <input type="text" class="input-text-authorization" id="question2" pattern="Джонс" required><br><br>
+                                <span id="q2Error" class="error-test"></span><br>
+                    
+                                <label class="questions">3. Какое полное имя Закки?</label><br>
+                                <label for="q_one"><input type="radio" class="var_otveta" name="q3" value="0">Заколебайка</label><br>
+                                <label for="q_one"><input type="radio" name="q3" value="0">Закибедри</label><br>
+                                <label for="q_one"><input type="radio" name="q3" value="1">Закильберри</label><br>
+                                <label for="q_one"><input type="radio" class="var_otvetaa" name="q3" value="0">У него нет полного имени</label><br><br>
+                                <span id="q3Error" class="error-test"></span>
+
+                                <label class="questions">4. В какой штат приехала Коралина?</label><br>
+                                <label for="q_two"><input type="radio" class="var_otveta" name="q4" value="0"> Мичиган </label><br>
+                                <label for="q_two"><input type="radio" name="q4" value="0"> Калифорния </label><br>
+                                <label for="q_two"><input type="radio" name="q4" value="1"> Орегон </label><br>
+                                <label for="q_two"><input type="radio" class="var_otvetaa" name="q4" value="0"> Вашингтон </label><br><br>
+                                <span id="q4Error" class="error-test"></span>
+
+                                <label class="questions">5. Как назывался дом, в который переехала семья Коралины?</label><br>
+                                <label for="q_three"><input type="radio" class="var_otveta" name="q5" value="0"> Коралевское поместье </label><br>
+                                <label for="q_three"><input type="radio" name="q5" value="0"> Поместье Форсибл </label><br>
+                                <label for="q_three"><input type="radio" name="q5" value="1"> Розовый дворец </label><br>
+                                <label for="q_three"><input type="radio" class="var_otvetaa" name="q5" value="0"> Цветущий сад </label><br><br>
+                                <span id="q5Error" class="error-test"></span>
+
+                                <label class="questions">6. По прибытию Коралины в другой мир, она встречает кота, который "преследовал" её в реальном мире. Какие у него были особенности?</label><br>
+                                <label for="q_four"><input type="radio" class="var_otveta" name="q6" value="0"> Работал на другую маму </label><br>
+                                <label for="q_four"><input type="radio" name="q6" value="1"> Умел разговаривать </label><br>
+                                <label for="q_four"><input type="radio" name="q6" value="0"> Умел ходить на двух лапах </label><br>
+                                <label for="q_four"><input type="radio" class="var_otvetaa" name="q6" value="0"> У него не было особенностей </label><br><br>
+                                <span id="q6Error" class="error-test"></span>
+
+                                <div id="errorCheck" class="error"></div>
+                            </form>
+                        <div class="buttons">
+                            <button class="button-navi" id="goToResults">Перейти к результатам</button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="container-test results-container">
+                        <h1>Результаты</h1>
+                        <div>
+                            <div id="resultAnswers" class="resultAnswers"></div>
+                        </div>
+                        <div class="buttons">
+                            <button class="button-navi" id="repeat">Повторить</button>
+                        </div>
+                    </div>
+                    
+                </div>
+        <footer id="footer" class="footer">
             <p class="paragraph-p-tel-copi">Телефон для связи: <a href="tel:+79528125252">+79528125252</a></p>
                 <div class="social-icons">
                     <a href="https://360.yandex.ru/mail/" target="_blank">
