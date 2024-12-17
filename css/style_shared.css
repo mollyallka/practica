@@ -404,6 +404,59 @@ a.active{
 .results-container{
     display: none;
 }
+
+.container-user-authorization{
+    border: 1px solid #B0C4DE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.user-authorization{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outputResult{
+    color: #B0C4DE;
+    margin: 7px;
+    font-size: 20px;
+}
+.form-account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-logout{
+    font-family:sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    padding: 8px 15px;
+    color: #B0C4DE;
+    background-color: #6a1b9a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-logout:hover {
+    background-color: #8e24aa;
+    transform: scale(1.05);
+}
+
+.button-logout:active {
+    transform: scale(0.95);
+}
+
 @media (max-width: 600px) {
 .photo-opisanie, .photo-opisanie-p-two {
     float: none;

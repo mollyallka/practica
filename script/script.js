@@ -1,6 +1,7 @@
 const form1 = document.getElementById("form1");
 const nameInput = document.getElementById("name");
 const birthdateInput = document.getElementById("birthdate");
+const genderInput = document.getElementById("male");
 const nameError = document.getElementById("nameError");
 const dateError = document.getElementById("dateError");
 const next1 = document.getElementById("next1");
@@ -44,6 +45,10 @@ if (next1) {
             const userLogin = nameInput.value;
             // сохранение имени пользователя в локальном хранилище
             localStorage.setItem("userLogin", userLogin);
+            const userBirthdate = birthdateInput.value;
+            localStorage.setItem("userBirthdate", userBirthdate);
+            const gender = document.querySelector('input[name="gender"]:checked').value; // Получаем выбранное значение
+            localStorage.setItem("userGender", gender);
             // переход на страницу описания
             window.location.href = "./html/ind.html";
         }

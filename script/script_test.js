@@ -53,6 +53,8 @@ goToResultsButton.addEventListener("click", () => {
     const score = correctAnswers * 10;
 
     resultAnswers.textContent = `Вы ответили верно на ${correctAnswers} из 6 вопросов. Ваши баллы: ${score} из 60 возможных.`;
+    const testResult = resultAnswers.textContent;
+    localStorage.setItem("testResult", testResult);
     document.querySelector('.results-container').style.display = "block";
 });
 

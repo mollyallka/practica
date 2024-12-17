@@ -23,9 +23,30 @@
             <span id="welcomeMessage" class="menu-login"></span>
             <button id="exit">Выйти</button>
         </header>
-            <div>
-                <h1>Личный кабинет</h1>
-                
+            <h1>Личный кабинет</h1>
+            <div class="form-account">
+                <div class="container-user-authorization">
+                <form id="form1" name="formOne" novalidate>
+                    <div class="user-authorization">
+                        <label for="name">Логин:</label>
+                        <span id="resultLogin" class="outputResult"></span><br>
+
+                        <label for="birthdate">Дата рождения:</label>
+                        <span id="resultDate" class="outputResult"></span><br>
+
+                        <label>Пол:</label>
+                        <span id="resultGender" class="outputResult"></span> <br>
+
+                        <div>
+                            <label>Результат теста: </label>
+                            <div id="resultAnswers" class="outputResult"></div>
+                        </div><br>
+
+                        <button id="logout" class="button-logout">Выйти</button>
+                    </div>
+                </form>
+                </div>
+            </div>
         <footer id="footer" class="footer-slovar">
             <p class="paragraph-p-tel-copi">Телефон для связи: <a href="tel:+79528125252">+79528125252</a></p>
                 <div class="social-icons">
